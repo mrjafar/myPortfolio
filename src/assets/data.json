@@ -1,0 +1,76 @@
+{
+    "education": [
+        {
+            "id": "1",
+            "date": "2017 - 2019",
+            "education": "10th (Matriculation)",
+            "description": "Completed 10th grade at Govt. High School, Karkaur, covering core subjects like Mathematics, Science, and Social Studies."
+        },
+        {
+            "id": "2",
+            "date": "2019 - 2021",
+            "education": "12th (Intermediate with Arts)",
+            "description": "Completed 12th grade at Govt. Sr. Sec. School, Dera Bassi, focusing on Arts subjects like History, Political Science, and Economics."
+        },
+        {
+            "id": "3",
+            "date": "2023 - 2024",
+            "education": "Advance Diploma in Computer Application (ADCA)",
+            "description": "Completed a one-year diploma in computer applications, covering MS Office (Word, PowerPoint, Excel), Terminal operations, and FoxPro database management."
+        },
+        {
+            "id": "4",
+            "date": "2021 - 2024",
+            "education": "Bachelor of Computer Applications (BCA)",
+            "description": "Studied at Punjabi University, Patiala, focusing on programming fundamentals, database management, computer networks, and Management Information Systems (MIS)."
+        },
+        {
+            "id": "5",
+            "date": "2024 - 2025",
+            "education": "Internship (8 Months)",
+            "description": "Completed an internship in React.js at Sunfocus Solutions, gaining hands-on experience in frontend development, component-based architecture, and state management."
+        }
+    ],
+    "skills": [
+        {
+            "id": "1",
+            "name": "React.js",
+            "level": 85
+        },
+        {
+            "id": "2",
+            "name": "JavaScript (ES6+)",
+            "level": 90
+        },
+        {
+            "id": "3",
+            "name": "SCSS/Sass",
+            "level": 80
+        },
+        {
+            "id": "4",
+            "name": "TypeScript",
+            "level": 70
+        },
+        {
+            "id": "6",
+            "name": "Responsive Design",
+            "level": 80
+        },
+        {
+            "id": "7",
+            "name": "Git & GitHub",
+            "level": 85
+        },
+        {
+            "id": "9",
+            "name": "DevTools",
+            "level": 75
+        },
+        {
+            "id": "10",
+            "name": "Render, Netlify",
+            "level": 70
+        }
+    ]
+}

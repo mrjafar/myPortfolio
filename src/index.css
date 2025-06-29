@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: rgb(0, 255, 255);
+  --secondary-color: #fff;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 1.6rem; /* Base font size */
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  margin: 2rem auto 0 auto;
+  background-color: #0f0a0a !important;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
+
+p {
+  color: #fff;
+}
+
+hr {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 4px;
+  border: none;
+  outline: none;
+}
+.svgPath svg {
+  width: 100%;
+  height: 100%;
+}
+
+.svgPath path {
+  stroke: var(--primary-color);
+  stroke-width: 2;
+  fill: transparent;
+}
+
+section {
+  width: 100%;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.skills-container {
+  z-index: 9;
+  /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5rem 5rem 5rem 5rem;
+  -webkit-border-radius: 5rem 5rem 5rem 5rem;
+  -moz-border-radius: 5rem 5rem 5rem 5rem;
+  -ms-border-radius: 5rem 5rem 5rem 5rem;
+  -o-border-radius: 5rem 5rem 5rem 5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #0f0a0a;
+  width: 0.4rem;
+}
+
+/* // At the end of your stylesheet or inside dedicated components */
+@media (max-width: 1024px) {
+  section {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 1.5rem 1rem;
+  }
+}

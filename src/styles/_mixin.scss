@@ -1,0 +1,117 @@
+@use "_variables" as *;
+
+@mixin hover($color) {
+  color: #fff;
+  //   transition: all 0.3s ease;
+
+  &:hover {
+    color: $color !important;
+    // border-bottom: 2px solid $color;
+  }
+}
+
+.nav-link {
+  @include hover($primary_color);
+  margin: 0 1rem;
+
+  &.active {
+    color: $primary_color !important;
+  }
+}
+
+
+
+// transition effect----
+@mixin transition($property) {
+  transition: all .3s $property;
+  -webkit-transition: all .3s $property;
+  -moz-transition: all .3s $property;
+  -ms-transition: all .3s $property;
+  -o-transition: all .3s $property;
+
+}
+
+@mixin transform($property) {
+  transform: $property();
+  -webkit-transform: $property();
+  -moz-transform: $property();
+  -ms-transform: $property();
+  -o-transform: $property();
+}
+
+/***** Section Animation *****/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+  }
+
+  100% {
+    opacity: 100;
+
+  }
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid $primary_color;
+  }
+}
+
+@keyframes words {
+
+  0%,
+  25% {
+    content: "Frontend Developer";
+  }
+
+  26%,
+  50% {
+    content: "Web Developer";
+  }
+
+  51%,
+  75% {
+    content: "ReactJS Developer";
+  }
+
+  76%,
+  100% {
+    content: "Web Designer"
+  }
+
+}
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+/***** End Section Animation*****/
