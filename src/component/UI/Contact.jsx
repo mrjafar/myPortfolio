@@ -109,6 +109,9 @@ const Contact = () => {
                         />
                         <FormControl
                             type='number'
+                            name='mobile'
+                            max="10"
+                            min="10"
                             placeholder='Enter your mobile number'
                             autoComplete='off'
                             value={input.mobile}

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const LogoWrapper = styled.div`
   font-family: 'Fira Code', monospace;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #00ffd1;
   letter-spacing: 1px;
@@ -19,7 +19,7 @@ const LogoWrapper = styled.div`
   }
 
    @media (max-width: 600px) {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 `;
 

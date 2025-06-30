@@ -73,13 +73,21 @@ const About = () => {
                     overlayClassName="custom-overlay"
                     contentLabel="About Me Modal"
                 >
-                    <GiCrossedBones className="cross-icon" onClick={() => setIsModalOpen(false)} />
+                    <GiCrossedBones className="cross-icon" title="Go back" onClick={() => setIsModalOpen(false)} />
                     <figure ref={imgRef}>
                         <img src={viewMoreImg} alt="about-me-img" />
                         <figcaption>
                             <h3>About <span>Me</span></h3>
-                            I'm a Frontend Developer with a passion for translating ambitious ideas into elegant, user-focused web experiences. I specialize in React.js and TypeScript, building scalable and efficient components with modern architecture in mind. My expertise in SCSS, styled-components, and other modern styling libraries allows me to craft responsive and accessible UI that feels as smooth as it looks.
-                            💡 Beyond just writing code, I thrive on problem-solving, team collaboration, and staying ahead of the curve with the latest frontend trends. Whether it’s optimizing performance, implementing state management strategies, or working closely with designers to bring vision to life, I take pride in delivering high-quality products that exceed user expectations.
+                            <p>
+                                I'm a Frontend Developer with a passion for translating ambitious ideas into elegant, user-focused
+                                web experiences. I specialize in React.js and TypeScript, buildingscalable and efficient components
+                                with modern architecture in mind.
+                            </p>
+                            <p> My expertise in SCSS, styled-components, and other modern styling libraries allows me to craft responsive and accessible UI that feels as smooth
+                                as it looks.💡 Beyond just writing code, I thrive on problem-solving, team collaboration, and staying
+                                ahead of the curve with the latest frontend trends. Whether it’s optimizing performance, implementing
+                                state management strategies, or working closely with designers to bring vision to life, I take pride
+                                in delivering high-quality products that exceed user expectations.</p>
                             <ul>
                                 🧩 Core Skills
                                 <li>
