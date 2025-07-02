@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React, { useState } from 'react'
 import { Button, FormControl, Toast } from 'react-bootstrap'
+import { toast } from 'react-toastify';
 gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
 
@@ -24,6 +25,11 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        if (!/^\d{10}$/.test(input.mobile)) {
+            toast.error("Enter a valid 10-digit mobile number.");
+            return;
+        }
+
         const res = await fetch("https://formspree.io/f/xjkrenkg", {
             method: "POST",
             headers: {
@@ -32,10 +38,18 @@ const Contact = () => {
             body: JSON.stringify(input)
         });
         if (res.ok) {
-            Toast.success("Message Sent.")
+            toast.success("Message Sent! i will reach you soon.", {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                theme: "dark", // or "light" or custom
+            });
             setInput({ name: "", email: "", mobile: "", message: "" })
         } else {
-            Toast.error("Something went wrong!, please try again later.")
+            toast.error("Something went wrong!, please try again later.")
         }
     }
     useGSAP(() => {
@@ -61,20 +75,20 @@ const Contact = () => {
             duration: .7,
             ease: "power4.inOut",
             stagger: .3,
-        },"anim")
+        }, "anim")
         tl.from("#contact .contact .inputs textarea", {
             x: -800,
             opacity: 0,
             duration: .7,
             ease: "power4.inOut",
             stagger: .3,
-        },"anim")
+        }, "anim")
         gsap.from("#contact .contact button", {
             y: 200,
             opacity: 0,
             duration: .7,
             ease: "power4.inOut",
-            scrollTrigger:{
+            scrollTrigger: {
                 trigger: "#contact",
                 scroller: "body",
                 start: "top 60%",
@@ -108,15 +122,14 @@ const Contact = () => {
                             required
                         />
                         <FormControl
-                            type='number'
+                            type='tel'
                             name='mobile'
-                            max="10"
-                            min="10"
+                            pattern='[0-9]{10}'
                             placeholder='Enter your mobile number'
                             autoComplete='off'
                             value={input.mobile}
                             onChange={handleInputChange}
-                            required>
+                            required >
                         </FormControl>
                     </div>
                     <FormControl

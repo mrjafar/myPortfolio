@@ -343,8 +343,8 @@ p {
 .navbar-scrolled {
     width: 95%;
     top: 1rem;
-    left: 2rem;
-    right: 2rem;
+    left: 2.8rem;
+    right: 2.8rem;
     padding: .1rem;
     border-bottom: 2px solid $primary_color;
     background: rgba(255, 255, 255, 0.2);
@@ -1260,4 +1260,37 @@ p {
             height: 4rem;
         }
     }
+}
+
+
+
+// TOAST STYLE------
+/* Customize toast container */
+.Toastify__toast-container {
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+}
+
+/* Customize individual toast */
+.Toastify__toast {
+    background-color: #222;
+    color: $primary_color;
+    font-family: 'Arial', sans-serif;
+    border-radius: 8px;
+}
+
+/* Customize success toast */
+.Toastify__toast--success {
+    background-color: #222;
+}
+
+/* Customize error toast */
+.Toastify__toast--error {
+    background-color: $primary_color;
+}
+
+/* Optional: progress bar */
+.Toastify__progress-bar {
+    background: $primary_color;
 }
