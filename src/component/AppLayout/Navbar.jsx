@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../UI/Logo';
+import CV from "../../assets/Jafar's CV .pdf"
+import { MdDownload, MdOutlineFileDownload } from 'react-icons/md';
 
 function Navigation() {
     const [activeLink, setActiveLink] = useState("home");
@@ -56,7 +58,6 @@ function Navigation() {
                 </div>
 
                 <Navbar.Toggle className="nav-toggle" aria-controls="basic-navbar-nav" />
-
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center text-center">
                     <Nav className="ms-auto">
                         {["Home", "About", "Education", "Skills", "Contact"].map((text, i) => {
@@ -77,6 +78,17 @@ function Navigation() {
                             );
                         })}
                     </Nav>
+                    <div className="download">
+                        <a
+                            href={CV}
+                            download
+                            className="btn btn-outline-light"
+                            title='download now'
+                        >
+                            <MdOutlineFileDownload className='icon' />
+                            CV
+                        </a>
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

@@ -326,6 +326,17 @@ p {
         .active {
             color: $primary_color !important;
         }
+
+    }
+
+    .download a {
+        // margin-left: 3rem;
+        padding: .2rem 1rem;
+
+        .icon {
+            font-size: 2.4rem;
+            margin-bottom: .3rem;
+        }
     }
 
     .nav-toggle {
@@ -915,6 +926,7 @@ p {
         border-radius: 8px;
         cursor: pointer;
     }
+
 
     .navbar-scrolled {
         top: 1rem;

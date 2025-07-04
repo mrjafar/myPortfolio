@@ -321,6 +321,13 @@ p, .about-container .about-right {
 .navbar-container .nav-link .active {
   color: rgb(0, 255, 255) !important;
 }
+.navbar-container .download a {
+  padding: 0.2rem 1rem;
+}
+.navbar-container .download a .icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
 .navbar-container .nav-toggle {
   color: rgb(0, 255, 255) !important;
   background-color: rgb(0, 255, 255);
